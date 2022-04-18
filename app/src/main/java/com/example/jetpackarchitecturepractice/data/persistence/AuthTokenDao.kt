@@ -1,7 +1,7 @@
 package com.example.jetpackarchitecturepractice.data.persistence
 
 import androidx.room.*
-import com.example.jetpackarchitecturepractice.model.dto.AuthTokenDTO
+import com.example.jetpackarchitecturepractice.data.dto.cach.AuthTokenDTO
 
 @Dao
 interface AuthTokenDao {

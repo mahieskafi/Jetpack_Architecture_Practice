@@ -1,7 +1,7 @@
 package com.example.jetpackarchitecturepractice.model
 
-interface DtoMapper<DTO, ENTITY> {
+interface DtoMapper<DTO, DomainModel> {
 
-    fun mapDtoToEntity(dto: DTO): ENTITY
-    fun mapEntityToDto(entity: ENTITY): DTO
+    fun mapDtoToEntity(dto: DTO): DomainModel
+    fun mapEntityToDto(domainModel: DomainModel): DTO
 }

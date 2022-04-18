@@ -1,4 +1,4 @@
-package com.example.jetpackarchitecturepractice.model.entity
+package com.example.jetpackarchitecturepractice.model.data
 
 
 data class AccountProperties(

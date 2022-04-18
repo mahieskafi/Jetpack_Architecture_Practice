@@ -1,8 +1,7 @@
 package com.example.jetpackarchitecturepractice.model.dtomapper
 
 import com.example.jetpackarchitecturepractice.model.DtoMapper
-import com.example.jetpackarchitecturepractice.model.dto.AccountPropertiesDTO
-import com.example.jetpackarchitecturepractice.model.entity.AccountProperties
+import com.example.jetpackarchitecturepractice.model.data.AccountProperties
 
 class AccountPropertiesDtoMapper : DtoMapper<AccountPropertiesDTO, AccountProperties> {
     override fun mapDtoToEntity(dto: AccountPropertiesDTO): AccountProperties {
@@ -13,11 +12,11 @@ class AccountPropertiesDtoMapper : DtoMapper<AccountPropertiesDTO, AccountProper
         )
     }
 
-    override fun mapEntityToDto(entity: AccountProperties): AccountPropertiesDTO {
+    override fun mapEntityToDto(domainModel: AccountProperties): AccountPropertiesDTO {
         return AccountPropertiesDTO(
-            pk = entity.pk,
-            email = entity.email,
-            username = entity.username
+            pk = domainModel.pk,
+            email = domainModel.email,
+            username = domainModel.username
         )
     }
 }

@@ -1,4 +1,4 @@
-package com.example.jetpackarchitecturepractice.model.dto
+package com.example.jetpackarchitecturepractice.data.dto.cach
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
